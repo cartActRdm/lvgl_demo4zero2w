@@ -119,7 +119,7 @@ rm -rf build/pi-native
 
 ## 运行时环境变量
 
-默认值已经匹配你目前这块屏，但都可以覆盖：
+默认值已经匹配目前我手上这块屏，但都可以覆盖：
 
 ```bash
 LVGL_FONT_FILE=/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
