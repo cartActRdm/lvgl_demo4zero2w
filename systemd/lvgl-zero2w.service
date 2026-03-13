@@ -1,0 +1,23 @@
+[Unit]
+Description=LVGL Zero 2 W touch UI
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/haicoin/lvgl-zero2w
+ExecStart=/home/haicoin/lvgl-zero2w/scripts/run-pi.sh
+Restart=on-failure
+RestartSec=2
+User=root
+Environment=ILI9341_ROTATION=0
+Environment=XPT2046_RAW_X_MIN=360
+Environment=XPT2046_RAW_X_MAX=3880
+Environment=XPT2046_RAW_Y_MIN=156
+Environment=XPT2046_RAW_Y_MAX=3824
+Environment=XPT2046_SWAP_XY=0
+Environment=XPT2046_INVERT_X=1
+Environment=XPT2046_INVERT_Y=0
+
+[Install]
+WantedBy=multi-user.target
