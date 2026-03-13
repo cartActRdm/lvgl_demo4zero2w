@@ -1,0 +1,2 @@
+# lvgl_demo4zero2w
+这是一个在树莓派zero2w上运行的一个lvgl的demo，基于ili9341tft显示屏，内嵌xpt2046触摸芯片
